@@ -130,6 +130,15 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&mo 2>;
         };
+
+        mt3: mod_tap3 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
