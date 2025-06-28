@@ -146,17 +146,27 @@
 
         CONBO_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <9 8>;
         };
 
         COMBO_TAB {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <3 2>;
         };
 
-        COMBO_WIN {
-            bindings = <&kp LWIN>;
-            key-positions = <30 31>;
+        COMBO_SHIFTTAB {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <3 2 1>;
+        };
+
+        COMBO_CLICK1 {
+            bindings = <&mkp LCLK>;
+            key-positions = <13 12>;
+        };
+
+        COMBO_CLICK2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <13 12 11>;
         };
     };
 
@@ -177,10 +187,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp Q             &kp W         &kp E  &kp R      &kp T  &kp Y            &kp U      &kp I      &kp O                    &kp P
-&kp A             &kp S         &kp D  &kp F      &kp G  &kp H            &kp J      &kp K      &kp L                    &mt3 EQUAL MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V      &kp B  &kp N            &kp M      &kp COMMA  &kp PERIOD               &mt2 RIGHT_CONTROL MINUS
-&kp LCTRL         &kp LEFT_ALT         &kp SPACE  &mo 1  &lt 2 BACKSPACE  &kp ENTER             &mt CAPSLOCK LANGUAGE_2  &mt RCTRL LANGUAGE_1
+&kp Q                &kp W         &kp E  &kp R        &kp T  &kp Y          &kp U        &kp I      &kp O         &kp P
+&mt3 LEFT_SHIFT A    &kp S         &kp D  &kp F        &kp G  &kp H          &kp J        &kp K      &kp L         &mt3 RIGHT_SHIFT COLON
+&mt3 LEFT_CONTROL Z  &kp X         &kp C  &kp V        &kp B  &kp N          &kp M        &kp COMMA  &kp PERIOD    &mt2 RIGHT_CONTROL MINUS
+&kp LEFT_ALT         &kp LEFT_WIN         &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &kp LEFT_WIN  &kp RIGHT_ALT
             >;
         };
 
@@ -189,20 +199,20 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&mt2 F1 NUMBER_1  &mt2 F2 NUMBER_2  &mt2 F3 NUMBER_3  &mt2 F4 NUMBER_4  &mt2 F5 N5         &kp KP_COMMA     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE
-&mt2 F6 NUMBER_6  &mt2 F7 N7        &mt2 F8 N8        &mt2 F9 N9        &mt2 F10 N0        &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK
-&mt2 F11 GRAVE    &mt2 F12 SQT      &kp SEMICOLON     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS
-&trans            &trans                              &trans            &trans             &kp DELETE       &trans                            &none            &kp KP_PLUS
+&kp TILDE  &kp F7  &kp F8  &kp F9  &kp F12  &kp N7      &kp N8  &kp N9  &trans   &trans
+&trans     &kp F4  &kp F5  &kp F6  &kp F11  &kp N4      &kp N5  &kp N6  &trans   &kp COLON
+&trans     &kp F1  &kp F2  &kp F3  &kp F10  &kp N1      &kp N2  &kp N3  &kp DOT  &kp SLASH
+&trans     &trans          &trans  &trans   &kp DELETE  &kp N0          &trans   &trans
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp EXCLAMATION       &kp AT_SIGN        &kp HASH      &kp DOLLAR            &kp PERCENT            &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp PRINTSCREEN
-&kp CARET             &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&mt LEFT_SHIFT TILDE  &kp DOUBLE_QUOTES  &kp COLON     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &mkp MB4  &none         &mkp MB5   &kp RIGHT_SHIFT
-&trans                &trans                           &trans                &trans                 &trans         &trans                  &trans     &trans
+&kp EXCLAMATION       &kp AT_SIGN        &kp HASH      &kp DOLLAR            &kp PERCENT            &trans     &kp LA(LEFT)  &kp UP_ARROW   &kp LA(RIGHT)  &kp C_BRI_UP
+&kp CARET             &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER  &kp LEFT      &kp DOWN       &kp RIGHT      &kp C_BRI_DN
+&mt LEFT_SHIFT TILDE  &kp DOUBLE_QUOTES  &kp COLON     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &kp PAGE_UP   &kp PAGE_DOWN  &kp HOME       &kp END
+&trans                &trans                           &trans                &trans                 &trans     &trans                       &trans         &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
@@ -233,10 +243,10 @@
         SCROLL_R_LAYER {
             display-name = "scroll_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL       &trans     &trans         &kp INT_YEN        &kp PLUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
+&kp AT_SIGN       &kp SLASH          &kp DOLLAR     &kp ASTRK  &kp CARET      &kp HASH           &kp MINUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans            &trans             &kp SEMICOLON  &trans     &kp BACKSLASH  &kp AMPERSAND      &kp EQUAL        &kp LESS_THAN         &kp GREATER_THAN       &trans
+&trans            &trans                            &trans     &trans         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                        &trans                 &trans
             >;
         };
 
