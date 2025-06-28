@@ -168,6 +168,16 @@
             bindings = <&mkp RCLK>;
             key-positions = <13 12 11>;
         };
+
+        COMBO_LANG1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <16 17>;
+        };
+
+        COMBO_LANG2 {
+            bindings = <&kp LANG2>;
+            key-positions = <12 13>;
+        };
     };
 
     macros {
