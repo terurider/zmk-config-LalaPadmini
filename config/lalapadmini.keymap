@@ -176,7 +176,7 @@
 
         COMBO_LANG2 {
             bindings = <&kp LANG2>;
-            key-positions = <12 13>;
+            key-positions = <6 7>;
         };
     };
 
