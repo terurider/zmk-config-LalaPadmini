@@ -255,7 +255,7 @@
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL       &trans     &trans         &kp INT_YEN        &kp PLUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
 &kp AT_SIGN       &kp SLASH          &kp DOLLAR     &kp ASTRK  &kp CARET      &kp HASH           &kp MINUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans            &trans             &kp SEMICOLON  &trans     &kp BACKSLASH  &kp AMPERSAND      &kp EQUAL        &kp LESS_THAN         &kp GREATER_THAN       &trans
+&trans            &trans             &kp SEMICOLON  &trans     &kp BACKSLASH  &kp AMPERSAND      &kp EQUAL        &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
 &trans            &trans                            &trans     &trans         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                        &trans                 &trans
             >;
         };
