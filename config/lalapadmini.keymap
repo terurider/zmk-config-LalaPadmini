@@ -144,11 +144,6 @@
     combos {
         compatible = "zmk,combos";
 
-        CONBO_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <9 8>;
-        };
-
         COMBO_TAB {
             bindings = <&kp TAB>;
             key-positions = <3 2>;
@@ -225,7 +220,7 @@
 &trans                &trans                           &trans                &trans                 &trans     &trans                       &trans         &trans
             >;
 
-            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_right_left>;
         };
 
         SYSTEM_LAYER {
