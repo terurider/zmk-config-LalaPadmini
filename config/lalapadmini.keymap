@@ -210,10 +210,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp Q                &kp W           &kp E  &kp R        &kp T  &kp Y          &kp U        &kp I      &kp O                 &kp P
-&mt3 LEFT_SHIFT A    &kp S           &kp D  &kp F        &kp G  &kp H          &kp J        &kp K      &kp L                 &mt3 RIGHT_SHIFT COLON
-&mt2 LEFT_CONTROL Z  &mt LEFT_GUI X  &kp C  &kp V        &kp B  &kp N          &kp M        &kp COMMA  &mt RIGHT_ALT PERIOD  &mt2 RIGHT_CONTROL MINUS
-&kp LEFT_ALT         &mo 2                  &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &mo 6                 &mt3 RIGHT_ALT ESCAPE
+&kp Q              &kp W           &kp E  &kp R        &kp T  &kp Y          &kp U        &kp I      &kp O                 &kp P
+&mt3 LEFT_SHIFT A  &kp S           &kp D  &kp F        &kp G  &kp H          &kp J        &kp K      &kp L                 &mt3 RIGHT_SHIFT COLON
+&kp Z              &mt LEFT_GUI X  &kp C  &kp V        &kp B  &kp N          &kp M        &kp COMMA  &mt RIGHT_ALT PERIOD  &mt2 RIGHT_CONTROL MINUS
+&kp LEFT_ALT       &mo 2                  &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &mo 6                 &mt3 RIGHT_ALT ESCAPE
             >;
         };
 
