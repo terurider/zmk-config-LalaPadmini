@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -214,7 +213,7 @@
 &kp Q                &kp W           &kp E  &kp R        &kp T  &kp Y          &kp U        &kp I      &kp O                 &kp P
 &mt3 LEFT_SHIFT A    &kp S           &kp D  &kp F        &kp G  &kp H          &kp J        &kp K      &kp L                 &mt3 RIGHT_SHIFT COLON
 &mt3 LEFT_CONTROL Z  &mt LEFT_GUI X  &kp C  &kp V        &kp B  &kp N          &kp M        &kp COMMA  &mt RIGHT_ALT PERIOD  &mt2 RIGHT_CONTROL MINUS
-&kp LEFT_ALT         &kp LEFT_WIN           &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &kp LEFT_WIN          &mt3 RIGHT_ALT ESCAPE
+&kp LEFT_ALT         &kp LEFT_WIN           &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &mo 3                 &mt3 RIGHT_ALT ESCAPE
             >;
         };
 
@@ -247,10 +246,10 @@
             sensor-bindings = <&volume_up_down>, <&volume_up_down>;
 
             bindings = <
-&trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3
-&trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans        &trans          &trans
-&trans  &trans          &trans       &trans      &trans        &trans                      &trans          &trans
+&trans  &trans  &trans  &trans       &trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &bootloader  &sys_reset  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans
+&trans  &trans  &trans  &trans       &trans      &trans        &trans          &trans        &trans        &trans
+&trans  &trans          &trans       &trans      &trans        &trans                        &trans        &trans
             >;
         };
 
