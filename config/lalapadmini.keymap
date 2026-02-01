@@ -191,6 +191,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <12 13>;
         };
+
+        COMBO_MO3 {
+            bindings = <&mo 3>;
+            key-positions = <34 35>;
+        };
     };
 
     macros {
