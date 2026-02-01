@@ -213,7 +213,7 @@
 &kp Q                &kp W           &kp E  &kp R        &kp T  &kp Y          &kp U        &kp I      &kp O                 &kp P
 &mt3 LEFT_SHIFT A    &kp S           &kp D  &kp F        &kp G  &kp H          &kp J        &kp K      &kp L                 &mt3 RIGHT_SHIFT COLON
 &mt3 LEFT_CONTROL Z  &mt LEFT_GUI X  &kp C  &kp V        &kp B  &kp N          &kp M        &kp COMMA  &mt RIGHT_ALT PERIOD  &mt2 RIGHT_CONTROL MINUS
-&kp LEFT_ALT         &mo 2                  &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &lt 3 RIGHT_WIN       &mt3 RIGHT_ALT ESCAPE
+&kp LEFT_ALT         &mo 2                  &lt 1 SPACE  &mo 5  &kp BACKSPACE  &lt 2 ENTER             &mo 6                 &mt3 RIGHT_ALT ESCAPE
             >;
         };
 
@@ -276,10 +276,10 @@
         MOUSE_L_LAYER {
             display-name = "mouse_l_layer";
             bindings = <
-&trans  &trans       &mkp MCLK  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&mo 7   &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MB4     &trans     &mkp MB5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans     &trans  &trans  &trans          &trans  &trans
+&trans  &trans       &mkp MCLK  &trans     &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&mo 7   &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans
+&trans  &mkp MB4     &trans     &mkp MB5   &trans  &trans        &trans          &trans        &trans        &trans
+&trans  &trans                  &trans     &trans  &trans        &trans                        &trans        &trans
             >;
         };
 
